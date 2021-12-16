@@ -12,15 +12,15 @@ class FindMyAgeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.find_my_age_layout)
 
-//        buGetAge.setOnClickListener {
-//            // code will be execute when get my age button click
-//            val userDOB =
-//                Integer.parseInt(Date_of_Bath.text.toString())  // this is the transfer process of string to int
-//            // val userDOB=Date_of_Bath.text.toString()            // this is a string type that's why not getting
-//            val cYear = Calendar.getInstance().get(Calendar.YEAR)
-//            val finalResult = cYear - userDOB
-//            show_age.text = "Your age is $finalResult"
-//        }
+        buGetAge.setOnClickListener {
+            // code will be execute when get my age button click
+            val userDOB =
+                Integer.parseInt(Date_of_Bath.text.toString())  // this is the transfer process of string to int
+            // val userDOB=Date_of_Bath.text.toString()            // this is a string type that's why not getting
+            val cYear = Calendar.getInstance().get(Calendar.YEAR)
+            val finalResult = cYear - userDOB
+            show_age.text = "Your age is $finalResult"
+        }
     }
 
 
