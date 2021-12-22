@@ -1,16 +1,32 @@
 package com.android.kotlinlearning.findMyAge
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import com.android.kotlinlearning.R
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.android.kotlinlearning.databinding.FindMyAgeLayoutBinding
 import kotlinx.android.synthetic.main.find_my_age_layout.*
 import java.util.*
 
 
-class FindMyAgeActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.find_my_age_layout)
+class FindMyAgeActivity : Fragment() {
+    private lateinit var binding: FindMyAgeLayoutBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        binding = FindMyAgeLayoutBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
 
         buGetAge.setOnClickListener {
             // code will be execute when get my age button click
@@ -25,3 +41,4 @@ class FindMyAgeActivity : AppCompatActivity() {
 
 
 }
+

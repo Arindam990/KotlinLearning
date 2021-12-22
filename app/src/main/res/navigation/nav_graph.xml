@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.android.kotlinlearning.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_findMyAgeActivity"
+            app:destination="@id/findMyAgeActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_ticTac"
+            app:destination="@id/ticTac" />
+        <action
+            android:id="@+id/action_homeFragment_to_calculator"
+            app:destination="@id/calculator" />
+        <action
+            android:id="@+id/action_homeFragment_to_findMyAgeActivity2"
+            app:destination="@id/findMyAgeActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_calculator2"
+            app:destination="@id/calculator" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculator"
+        android:name="com.android.kotlinlearning.calculator.Calculator"
+        android:label="Calculator"
+        tools:layout="@layout/calculator_layout"/>
+    <fragment
+        android:id="@+id/ticTac"
+        android:name="com.android.kotlinlearning.ticTacToyGame.TicTac"
+        android:label="TicTac"
+        tools:layout="@layout/tic_tac_layout"/>
+    <fragment
+        android:id="@+id/findMyAgeActivity"
+        android:name="com.android.kotlinlearning.findMyAge.FindMyAgeActivity"
+        android:label="FindMyAgeActivity"
+        tools:layout="@layout/find_my_age_layout"/>
+</navigation>
