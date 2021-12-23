@@ -13,9 +13,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val navController=findNavController()
-
-        findMyAge_button.setOnClickListener(){
+        val navController = findNavController()
+    }
+    /*    findMyAge_button.setOnClickListener(){
             navController.navigate(R.id.findMyAgeActivity)
         }
         calculator_button.setOnClickListener(){
@@ -27,7 +27,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     }
 
-
+*/
 
 
 }
