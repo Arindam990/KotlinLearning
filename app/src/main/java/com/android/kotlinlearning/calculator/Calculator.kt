@@ -1,15 +1,9 @@
 package com.android.kotlinlearning.calculator
 
-import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.android.kotlinlearning.R
-import com.android.kotlinlearning.databinding.CalculatorLayoutBinding
-import com.android.kotlinlearning.databinding.TicTacLayoutBinding
 import kotlinx.android.synthetic.main.calculator_layout.*
 
 class Calculator: Fragment(R.layout.calculator_layout){

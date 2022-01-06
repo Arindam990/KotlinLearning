@@ -3,65 +3,76 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment1">
+    app:startDestination="@id/profile_fragment">
 
     <fragment
-        android:id="@+id/viewTransactionFragment"
-        android:name="com.android.kotlinlearning.ViewTransactionFragment"
-        android:label="fragment_view_transaction"
-        tools:layout="@layout/fragment_view_transaction" />
+        android:id="@+id/aboutInfoFragment"
+        android:name="com.android.kotlinlearning.FBPage.AboutInfoFragment"
+        android:label="fragment_about_info"
+        tools:layout="@layout/fragment_about_info" />
     <fragment
-        android:id="@+id/viewBalanceFragment"
-        android:name="com.android.kotlinlearning.ViewBalanceFragment"
-        android:label="fragment_view_balance"
-        tools:layout="@layout/fragment_view_balance" />
+        android:id="@+id/coverpicFragment"
+        android:name="com.android.kotlinlearning.FBPage.CoverpicFragment"
+        android:label="fragment_coverpic"
+        tools:layout="@layout/fragment_coverpic" />
     <fragment
-        android:id="@+id/homeFragment1"
-        android:name="com.android.kotlinlearning.HomeFragment1"
-        android:label="fragment_home1"
-        tools:layout="@layout/fragment_home1" >
+        android:id="@+id/dotFragment"
+        android:name="com.android.kotlinlearning.FBPage.DotFragment"
+        android:label="fragment_dot"
+        tools:layout="@layout/fragment_dot" />
+    <fragment
+        android:id="@+id/editDetailsFragment"
+        android:name="com.android.kotlinlearning.FBPage.EditDetailsFragment"
+        android:label="fragment_edit_details"
+        tools:layout="@layout/fragment_edit_details" />
+    <fragment
+        android:id="@+id/editprofileFragment"
+        android:name="com.android.kotlinlearning.FBPage.EditprofileFragment"
+        android:label="fragment_editprofile"
+        tools:layout="@layout/fragment_editprofile" />
+    <fragment
+        android:id="@+id/houseFragment"
+        android:name="com.android.kotlinlearning.FBPage.HouseFragment"
+        android:label="fragment_house"
+        tools:layout="@layout/fragment_house" />
+    <fragment
+        android:id="@+id/followFragment"
+        android:name="com.android.kotlinlearning.FBPage.FollowFragment"
+        android:label="fragment_follow"
+        tools:layout="@layout/fragment_follow" />
+    <fragment
+        android:id="@+id/instraFragment"
+        android:name="com.android.kotlinlearning.FBPage.InstraFragment"
+        android:label="fragment_instra"
+        tools:layout="@layout/fragment_instra" />
+    <fragment
+        android:id="@+id/lockFragment"
+        android:name="com.android.kotlinlearning.FBPage.LockFragment"
+        android:label="fragment_lock"
+        tools:layout="@layout/fragment_lock" />
+    <fragment
+        android:id="@+id/profilepicFragment"
+        android:name="com.android.kotlinlearning.FBPage.ProfilepicFragment"
+        android:label="fragment_profilepic"
+        tools:layout="@layout/fragment_profilepic" />
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.android.kotlinlearning.FBPage.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
         <action
-            android:id="@+id/action_homeFragment1_to_viewBalanceFragment2"
-            app:destination="@id/viewBalanceFragment" />
+            android:id="@+id/action_homeFragment1_to_storyFragment2"
+            app:destination="@id/storyFragment2" />
         <action
-            android:id="@+id/action_homeFragment1_to_viewTransactionFragment"
-            app:destination="@id/viewTransactionFragment" />
+            android:id="@+id/action_homeFragment1_to_coverpicFragment"
+            app:destination="@id/coverpicFragment" />
         <action
-            android:id="@+id/action_homeFragment1_to_sendMoneyFragment"
-            app:destination="@id/sendMoneyFragment" />
+            android:id="@+id/action_profile_fragment_to_profilepicFragment"
+            app:destination="@id/profilepicFragment" />
     </fragment>
-    <dialog
-        android:id="@+id/dialogFragment"
-        android:name="com.android.kotlinlearning.DialogFragment"
-        android:label="fragment_dialog"
-        tools:layout="@layout/fragment_dialog" >
-        <action
-            android:id="@+id/action_dialogFragment_to_messageFragment"
-            app:destination="@id/messageFragment" />
-    </dialog>
     <fragment
-        android:id="@+id/messageFragment"
-        android:name="com.android.kotlinlearning.MessageFragment"
-        android:label="fragment_message"
-        tools:layout="@layout/fragment_message" />
-    <fragment
-        android:id="@+id/cashFragment"
-        android:name="com.android.kotlinlearning.CashFragment"
-        android:label="fragment_cash"
-        tools:layout="@layout/fragment_cash" >
-        <action
-            android:id="@+id/action_cashFragment_to_dialogFragment"
-            app:destination="@id/dialogFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/sendMoneyFragment"
-        android:name="com.android.kotlinlearning.sendMoneyFragment"
-        android:label="fragment_send_money"
-        tools:layout="@layout/fragment_send_money" >
-        <action
-            android:id="@+id/action_sendMoneyFragment_to_cashFragment"
-            app:destination="@id/cashFragment" />
-    </fragment>
-
-
+        android:id="@+id/storyFragment2"
+        android:name="com.android.kotlinlearning.FBPage.StoryFragment"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story" />
 </navigation>
