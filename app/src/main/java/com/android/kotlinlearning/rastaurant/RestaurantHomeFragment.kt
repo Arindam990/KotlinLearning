@@ -34,8 +34,7 @@ class RestaurantHomeFragment : Fragment(fragment_restaurant_home) {
         super.onViewCreated(view, savedInstanceState)
         binding.recyclerview.layoutManager = LinearLayoutManager(requireActivity())
 
-        // This loop will create 20 Views containing
-        // the image with the count of view
+
 
 
         data.add(ItemsViewModel(R.drawable.french_fries, "French Fries"))
