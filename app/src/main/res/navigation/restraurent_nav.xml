@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/restraurent_nav"
+    app:startDestination="@id/restaurantHomeFragment">
+
+    <fragment
+        android:id="@+id/restaurantHomeFragment"
+        android:name="com.android.kotlinlearning.rastaurant.RestaurantHomeFragment"
+        android:label="fragment_restaurant_home"
+        tools:layout="@layout/fragment_restaurant_home" />
+</navigation>

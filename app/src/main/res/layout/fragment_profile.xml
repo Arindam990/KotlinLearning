@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <!-- have whatever children you want inside -->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02"
+
+
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="10dp" />
+
+        <Button
+            android:id="@+id/edit_Details_button"
+            android:layout_width="394dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/blue"
+            android:text="Edit public details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/about_button" />
+
+        <ImageView
+            android:id="@+id/button8"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <TextView
+            android:id="@+id/insta_button"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/leomessi10"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+            app:layout_constraintStart_toEndOf="@+id/imageView7" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_baseline_chevron_right_24"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/follow_imageView" />
+
+        <TextView
+            android:id="@+id/follow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/followed_by_892589_people"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/follow_imageView"
+            app:layout_constraintTop_toTopOf="@+id/follow_imageView" />
+
+        <ImageView
+            android:id="@+id/follow_imageView"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_baseline_forum_24"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/home_imageView" />
+
+        <TextView
+            android:id="@+id/home_descriptionbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/lives_in_argentina"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+
+            app:layout_constraintStart_toEndOf="@+id/home_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/lock_imageView" />
+
+        <ImageView
+            android:id="@+id/home_imageView"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:layout_margin="4dp"
+
+            android:src="@drawable/ic_baseline_home_24"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/lock_imageView" />
+
+        <TextView
+            android:id="@+id/lock_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="Profile Locked Learn more"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/lock_imageView"
+            app:layout_constraintStart_toEndOf="@+id/lock_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/editprofile_button"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/lock_imageView"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:layout_margin="4dp"
+
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_baseline_lock_24"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/story_button"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/editprofile_button"
+            android:layout_width="178dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/buttom_graybackground"
+            android:gravity="center"
+            android:text="Edit profile"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/story_button"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias=".4"
+            app:layout_constraintStart_toEndOf="@+id/story_button"
+            app:layout_constraintTop_toTopOf="@+id/story_button" />
+
+        <Button
+            android:id="@+id/story_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/blue"
+            android:text="+Add to Story"
+            app:layout_constraintStart_toStartOf="@+id/lock_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/simple_textView" />
+
+        <TextView
+            android:id="@+id/simple_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="All time top goal Scorer"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/name_textView"
+            app:layout_constraintStart_toStartOf="@+id/name_textView"
+            app:layout_constraintTop_toBottomOf="@+id/name_textView" />
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Lionel Messi"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profile_imageView"
+            app:layout_constraintHorizontal_bias="0.576"
+            app:layout_constraintStart_toStartOf="@+id/profile_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/profile_imageView" />
+
+
+        <ImageView
+            android:id="@+id/cover_imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+
+
+            app:layout_constraintBottom_toBottomOf="@id/name_textView"
+
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/background_image"
+            app:layout_constraintBottom_toBottomOf="@+id/changeCoverpic_imageView"
+            app:layout_constraintEnd_toEndOf="@+id/changeCoverpic_imageView"
+            app:layout_constraintStart_toStartOf="@+id/changeCoverpic_imageView"
+            app:layout_constraintTop_toTopOf="@+id/changeCoverpic_imageView" />
+
+
+        <ImageView
+            android:id="@+id/changeCoverpic_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:src="@drawable/ic_baseline_photo_camera_24"
+            app:layout_constraintBottom_toBottomOf="@+id/cover_imageView"
+            app:layout_constraintEnd_toEndOf="@+id/cover_imageView"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/buttom_graybackground"
+            app:layout_constraintBottom_toBottomOf="@id/dot_button"
+            app:layout_constraintLeft_toLeftOf="@id/dot_button"
+            app:layout_constraintRight_toRightOf="@id/dot_button"
+            app:layout_constraintTop_toTopOf="@id/dot_button" />
+
+
+        <TextView
+            android:id="@+id/dot_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/buttom_graybackground"
+            android:gravity="top"
+            android:text="..."
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/editprofile_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editprofile_button"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/profile_imageView"
+            android:layout_width="109dp"
+            android:layout_height="157dp"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:foregroundGravity="center"
+
+            app:layout_constraintBottom_toBottomOf="@+id/cover_imageView"
+            app:layout_constraintEnd_toEndOf="@+id/cover_imageView"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/cover_imageView"
+            app:layout_constraintVertical_bias="0.572" />
+
+        <ImageView
+            android:id="@+id/changeprofile_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/background_image"
+            android:src="@drawable/ic_baseline_photo_camera_24"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_imageView"
+            app:layout_constraintEnd_toEndOf="@+id/profile_imageView" />
+
+        <TextView
+            android:id="@+id/about_button"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/see_about_info"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/button8"
+            app:layout_constraintTop_toTopOf="@+id/button8" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

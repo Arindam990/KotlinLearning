@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/restaurantHomeFragment">
+
+    <fragment
+        android:id="@+id/aboutInfoFragment"
+        android:name="com.android.kotlinlearning.FBPage.AboutInfoFragment"
+        android:label="fragment_about_info"
+        tools:layout="@layout/fragment_about_info" />
+    <fragment
+        android:id="@+id/coverpicFragment"
+        android:name="com.android.kotlinlearning.FBPage.CoverpicFragment"
+        android:label="fragment_coverpic"
+        tools:layout="@layout/fragment_coverpic" />
+    <fragment
+        android:id="@+id/dotFragment"
+        android:name="com.android.kotlinlearning.FBPage.DotFragment"
+        android:label="fragment_dot"
+        tools:layout="@layout/fragment_dot" />
+    <fragment
+        android:id="@+id/editDetailsFragment"
+        android:name="com.android.kotlinlearning.FBPage.EditDetailsFragment"
+        android:label="fragment_edit_details"
+        tools:layout="@layout/fragment_edit_details" />
+    <fragment
+        android:id="@+id/editprofileFragment"
+        android:name="com.android.kotlinlearning.FBPage.EditprofileFragment"
+        android:label="fragment_editprofile"
+        tools:layout="@layout/fragment_editprofile" />
+    <fragment
+        android:id="@+id/houseFragment"
+        android:name="com.android.kotlinlearning.FBPage.HouseFragment"
+        android:label="fragment_house"
+        tools:layout="@layout/fragment_house" />
+    <fragment
+        android:id="@+id/followFragment"
+        android:name="com.android.kotlinlearning.FBPage.FollowFragment"
+        android:label="fragment_follow"
+        tools:layout="@layout/fragment_follow" />
+    <fragment
+        android:id="@+id/instraFragment"
+        android:name="com.android.kotlinlearning.FBPage.InstraFragment"
+        android:label="fragment_instra"
+        tools:layout="@layout/fragment_instra" />
+    <fragment
+        android:id="@+id/lockFragment"
+        android:name="com.android.kotlinlearning.FBPage.LockFragment"
+        android:label="fragment_lock"
+        tools:layout="@layout/fragment_lock" />
+    <fragment
+        android:id="@+id/profilepicFragment"
+        android:name="com.android.kotlinlearning.FBPage.ProfilepicFragment"
+        android:label="fragment_profilepic"
+        tools:layout="@layout/fragment_profilepic" />
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="com.android.kotlinlearning.FBPage.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_homeFragment1_to_storyFragment2"
+            app:destination="@id/storyFragment2" />
+        <action
+            android:id="@+id/action_homeFragment1_to_coverpicFragment"
+            app:destination="@id/coverpicFragment" />
+        <action
+            android:id="@+id/action_profile_fragment_to_profilepicFragment"
+            app:destination="@id/profilepicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyFragment2"
+        android:name="com.android.kotlinlearning.FBPage.StoryFragment"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story" />
+
+    <fragment
+        android:id="@+id/restaurantHomeFragment"
+        android:name="com.android.kotlinlearning.rastaurant.RestaurantHomeFragment"
+        android:label="fragment_restaurant_home"
+        tools:layout="@layout/fragment_restaurant_home" />
+</navigation>

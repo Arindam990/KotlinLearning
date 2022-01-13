@@ -1,17 +1,29 @@
 package com.android.kotlinlearning.ticTacToyGame
 
 import android.annotation.SuppressLint
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.android.kotlinlearning.R
 
-class TicTac : AppCompatActivity() {
+class TicTac : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tic_tac_layout)
+
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.tic_tac_layout, container, false)
     }
 
     fun buClick(view: View) {
@@ -115,14 +127,17 @@ class TicTac : AppCompatActivity() {
             winer = 2
         }
         if (winer == 1) {
-            Toast.makeText(this, "Player 1 win the game", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireActivity(), "Player 1 win the game", Toast.LENGTH_LONG).show()
 
         } else if (winer == 2) {
-            Toast.makeText(this, "Player 2 win the game", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireActivity(), "Player 2 win the game", Toast.LENGTH_LONG).show()
         }
 
     }
 
 
 }
+
+
+
 

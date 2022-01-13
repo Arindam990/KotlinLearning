@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">KotlinLearning</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_dob">Enter DOB</string>
+    <string name="android_payment_bank">Android payment bank</string>
+
+    <string name="cancel">CANCEL</string>
+    <string name="next">Next</string>
+    <string name="amount">Next</string>
+    <string name="lives_in_argentina">Lives in Argentina</string>
+    <string name="followed_by_892589_people">Followed by 892589 people</string>
+    <string name="leomessi10">leomessi10</string>
+    <string name="see_about_info">See About Info</string>
 </resources>
