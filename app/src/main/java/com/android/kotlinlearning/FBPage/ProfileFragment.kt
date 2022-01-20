@@ -26,6 +26,7 @@ import com.android.kotlinlearning.R
 import com.android.kotlinlearning.databinding.FragmentProfileBinding
 import com.bumptech.glide.Glide
 import java.io.File
+import java.lang.Long
 
 
 class ProfileFragment : Fragment(R.layout.fragment_profile) {
@@ -196,7 +197,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
                 val contentUri = ContentUris.withAppendedId(
                     Uri.parse(
                         "content://downloads/public_downloads"
-                    ), java.lang.Long.valueOf(docId)
+                    ), Long.valueOf(docId)
                 )
                 imagePath = getImagePath(contentUri, null)
             }

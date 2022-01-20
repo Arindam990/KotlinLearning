@@ -5,6 +5,8 @@ import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class CommonMethod {
@@ -18,6 +20,23 @@ class CommonMethod {
             .load(imageUrl)
             .apply(requestOptions)
             .into(imageView)
+    }
+//    fun getDate(timestamp: Long) :String {
+//        val calendar = Calendar.getInstance(Locale.ENGLISH)
+//        calendar.timeInMillis = timestamp * 1000L
+//        //val date = DateFormat.format("dd-MM-yyyy",calendar).toString()
+//        val date = DateFormat.getDateInstance().format("\"dd-MM-yyyy\"")
+//        return date
+//    }
+
+    public fun getDateTime(s: Long): String? {
+        return try {
+            val sdf = SimpleDateFormat("HH:mm:ss")
+            val netDate = Date(s * 1000)
+            sdf.format(netDate)
+        } catch (e: Exception) {
+            e.toString()
+        }
     }
 
 

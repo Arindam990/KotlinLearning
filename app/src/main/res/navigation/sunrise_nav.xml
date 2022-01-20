@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sunrise_nav"
+    app:startDestination="@id/sunriseTime_MainActivity">
+
+    <activity
+        android:id="@+id/sunriseTime_MainActivity"
+        android:name="com.android.kotlinlearning.GettingSunriseTime.SunriseTime_MainActivity"
+        android:label="activity_sunrise_time_main"
+        tools:layout="@layout/activity_sunrise_time_main" />
+</navigation>
